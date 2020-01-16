@@ -83,6 +83,9 @@ public class Left_Autonomous_Simple extends LinearOpMode {
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
 
+        //Strafe right
+        strafe(1,-1,1);
+        
         //Park, stop motors
         robot.leftDrive.setPower(0);
         robot.rightDrive.setPower(0);
