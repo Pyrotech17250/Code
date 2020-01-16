@@ -103,9 +103,9 @@ public class HardwarePushbot
     
     public void strafe (double power, int dir, int time) {
         leftDrive.setPower(dir*power);
-        auxLeftDrive.setPower(dir*power);
+        auxLeftDrive.setPower(-dir*power);
         rightDrive.setPower(-dir*power);
-        auxRightDrive.setPower(-dir*power);
+        auxRightDrive.setPower(dir*power);
         ElapsedTime timer = new ElapsedTime();
         while (timer.seconds()<time) {
         }
